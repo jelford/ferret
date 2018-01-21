@@ -7,7 +7,7 @@ module = "ferret"
 author = "James Elford"
 author-email = "james.p.elford@gmail.com"
 home-page = "https://github.com/jelford/ferret"
-requires-python = ~=3.6
+requires-python = "~=3.6"
 license = "MIT"
 description-file = "README.rst"
 
