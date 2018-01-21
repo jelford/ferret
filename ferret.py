@@ -58,7 +58,7 @@ _section_endings = (b'"""', b"'''", b'---')
 
 class Script:
     def __init__(self, script_path):
-        self.path = script_path
+        self.path = Path.resolve(script_path)
         with open(self.path, 'rb') as script_file:
             in_section = False
             dep_specs = []
