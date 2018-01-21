@@ -9,18 +9,23 @@ usage
 -----
 
 * Install ``ferret`` on the target environment with either:
-.. code-block::
+
+.. code-block:: shell
 
     pipsi install ferret
     # or
     pip install --user ferret
 
 * Replace your shebang line with this:
-.. code-block::
+
+.. code-block:: shell
+
     #! /usr/bin/env ferret
 
 * Declare your dependencies in your module's docstring:
+
 .. code-block:: python
+
     """
     A helpful description about your module
 
