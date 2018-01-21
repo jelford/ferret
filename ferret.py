@@ -1,7 +1,10 @@
 #! /usr/bin/env python3
 """
-a snake that runs. Ferret executes python files that contain a
-specification at the top for a venv in which they will be wrapped.
+a snake that runs. execute python files without packaging or installation
+
+ferret provides a shebang replacement that will parse dependencies from the top
+of your script and run install them to a dedicated venv.
+
 """
 
 __version__ = '0.1.0'
@@ -54,7 +57,9 @@ def script_key(script_path, dependencies):
         h.update(d.encode('utf-8'))
     return h.hexdigest()
 
+
 _section_endings = (b'"""', b"'''", b'---')
+
 
 class Script:
     def __init__(self, script_path):
