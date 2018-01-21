@@ -4,7 +4,7 @@ a snake that runs. Ferret executes python files that contain a
 specification at the top for a venv in which they will be wrapped.
 """
 
-__version__ = '0.0.1'
+__version__ = '0.1.0'
 
 import sys
 import os
