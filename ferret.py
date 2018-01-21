@@ -52,9 +52,9 @@ def venv_path(script_key):
 
 def script_key(script_path, dependencies):
     h = blake2b()
-    h.update(script_path.encode('utf-8'))
+    h.update(str(script_path).encode())
     for d in dependencies:
-        h.update(d.encode('utf-8'))
+        h.update(str(d).encode())
     return h.hexdigest()
 
 
@@ -63,7 +63,7 @@ _section_endings = (b'"""', b"'''", b'---')
 
 class Script:
     def __init__(self, script_path):
-        self.path = Path.resolve(script_path)
+        self.path = Path(script_path).resolve()
         with open(self.path, 'rb') as script_file:
             in_section = False
             dep_specs = []

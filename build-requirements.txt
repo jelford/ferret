@@ -1,2 +1,4 @@
 flit==0.13
 bumpversion==0.5.3
+restview
+pygments
