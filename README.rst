@@ -8,13 +8,11 @@ python, but with running.
 usage
 -----
 
-* Install ``ferret`` on the target environment with either:
+* Install ``ferret`` on the target environment:
 
 .. code-block:: shell
 
-    pipsi install ferret
-    # or
-    pip install --user ferret
+    pip install ferret # Warning: this will work with a python3 venv, but not a virtualenv (as used by pipsi)
 
 * Replace your shebang line with this:
 
