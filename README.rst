@@ -1,7 +1,7 @@
 ferret
 ======
 
-python, but with running.
+A snake that can run
 
 ``ferret`` provides a new shebang line for your python script that will install dependencies into a fresh ``venv`` - saving you the hassle of packaging and distribution. ``ferret`` lets you focus on writing just the code you need without sacrificing libraries.
 
