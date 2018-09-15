@@ -7,7 +7,7 @@ of your script and run install them to a dedicated venv.
 
 """
 
-__version__ = '0.7.0'
+__version__ = '0.8.0'
 
 import sys
 import os
